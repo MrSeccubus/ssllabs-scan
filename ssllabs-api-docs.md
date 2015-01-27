@@ -177,7 +177,11 @@ The remainder of the document explains the structure of the returned objects. Th
 * **port** - assessment port (e.g., 443)
 * **protocol** - protocol (e.g., HTTP)
 * **isPublic** - true if this assessment publicly available (listed on the SSL Labs assessment boards)
-* **status** - assessment status; possible values: DNS, ERROR, IN_PROGRESS, and READY.
+* **status** - assessment status; possible values: 
+    - DNS - SSLlabs is resolving the DNS records for the host
+    - ERROR - Scan aborted due to an error
+    - IN_PROGRESS - Scan is in progress
+    - READY - scan is ready
 * **statusMessage** - status message in English. When status is ERROR, this field will contain an error message.
 * **startTime** - assessment starting time, in milliseconds since 1970
 * **testTime** - assessment completion time, in milliseconds since 1970
