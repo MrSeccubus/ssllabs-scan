@@ -181,7 +181,7 @@ The remainder of the document explains the structure of the returned objects. Th
     - DNS - Resolving the DNS records for the host (first phase of a scan)
     - ERROR - Scan aborted due to an error
     - IN_PROGRESS - Scan is in progress
-    - READY - scan is ready
+    - READY - Scan is ready
 * **statusMessage** - status message in English. When status is ERROR, this field will contain an error message.
 * **startTime** - assessment starting time, in milliseconds since 1970
 * **testTime** - assessment completion time, in milliseconds since 1970
